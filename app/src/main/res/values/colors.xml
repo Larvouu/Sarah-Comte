@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorLauncher">#a9e8b8</color>
+
+    <color name="colorPrimaryUltraLight">#202221</color>
+    <color name="colorPrimaryLight">#b1ecd7</color>
+    <color name="colorPrimaryMoins">#85e7c4</color>
+    <color name="colorPrimary">#56191c</color>
+    <color name="colorPrimaryDark">#a9e8b8</color>
+    <color name="colorAccent">#4a4d4c</color>
+    <color name="colorVert">#7AD687</color>
+    <color name="colorOrange">#e88d56</color>
+
+    <color name="transparent">#00000000</color>
+
+
+
+    <!-- LES COULEURS DU MENU -->
+    <color name="colorBodureEtTexteBouton">#ffffff</color>
+    <color name="colorText">#ffffff</color>
+    <color name="colorLigneMenu">#ffffff</color>
+
+    <color name="colorJouerSub">#df4554</color>
+
+
+
+
+    <!-- ? -->
+    <color name="colorYellow">#536604fa</color>
+    <color name="colorRed">#5fec1524</color>
+    <color name="colorBlue">#5d00f1ff</color>
+    <color name="colorGreen">#4800e244</color>
+</resources>
+
+<!-- <color name="colorPrimaryUltraLight">#ffdde1</color>
+    <color name="colorPrimaryLight">#fe9aaf</color>
+    <color name="colorPrimaryMoins">#f16d88</color>
+    <color name="colorPrimary">#d13756</color>
+    <color name="colorPrimaryDark">#c71539</color> -->

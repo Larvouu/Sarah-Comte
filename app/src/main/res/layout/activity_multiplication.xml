@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Multiplication"
+    android:orientation="vertical"
+    android:background="@drawable/gradient1"
+    android:gravity="center_horizontal"
+    android:id="@+id/linear_layout_page">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp">
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:textColor="@android:color/black"
+        android:text="@string/err_aff"/>
+
+    <TextView
+        android:id="@+id/diff_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="8dp"
+        android:text="@string/err_aff"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/black"/>
+
+</RelativeLayout>
+
+    <!-- L'horloge de temps -->
+
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:drawableLeft="@drawable/ic_timer_black_24dp"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        android:textColor="@android:color/white"
+        android:text="15"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout_calcul"
+        android:layout_marginTop="30dp"
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:textSize="35sp"
+            android:id="@+id/nombre_un"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="@string/err_aff"/>
+        <TextView
+            android:id="@+id/signe_operation"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="x"/>
+        <TextView
+            android:textSize="35dp"
+            android:id="@+id/nombre_deux"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="@string/err_aff"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resultat"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:hint="@string/res"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- LE PAD AVEC TOUS LES BOUTONS -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!-- BOUTONS 1 A 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:layout_marginRight="12dp"
+                android:id="@+id/btn_un"
+                style="@style/btn_pave_numerique"
+            android:text="1"/>
+            <Button
+                android:id="@+id/btn_deux"
+                style="@style/btn_pave_numerique"
+                android:text="2"/>
+            <Button
+                android:layout_marginLeft="12dp"
+                android:id="@+id/btn_trois"
+                style="@style/btn_pave_numerique"
+                android:text="3"/>
+        </LinearLayout>
+        <!-- BOUTONS 4 A 6 -->
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:layout_marginRight="12dp"
+                android:id="@+id/btn_quatre"
+                style="@style/btn_pave_numerique"
+                android:text="4"/>
+            <Button
+                android:id="@+id/btn_cinq"
+                style="@style/btn_pave_numerique"
+                android:text="5"/>
+            <Button
+                android:layout_marginLeft="12dp"
+                android:id="@+id/btn_six"
+                style="@style/btn_pave_numerique"
+                android:text="6"/>
+        </LinearLayout>
+        <!-- BOUTONS 7 A 9 -->
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:layout_marginRight="12dp"
+                android:id="@+id/btn_sept"
+                style="@style/btn_pave_numerique"
+                android:text="7"/>
+            <Button
+                android:id="@+id/btn_huit"
+                style="@style/btn_pave_numerique"
+                android:text="8"/>
+            <Button
+                android:layout_marginLeft="12dp"
+                android:id="@+id/btn_neuf"
+                style="@style/btn_pave_numerique"
+                android:text="9"/>
+        </LinearLayout>
+        <!-- BOUTONS C 0 ET VALIDER -->
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:layout_marginRight="12dp"
+                android:id="@+id/btn_effacer"
+                style="@style/btn_pave_numerique_orange"
+                android:text="C"/>
+            <Button
+                android:id="@+id/btn_zero"
+                style="@style/btn_pave_numerique"
+                android:text="0"/>
+            <Button
+                android:layout_marginLeft="12dp"
+                android:id="@+id/btn_valider"
+                style="@style/btn_pave_numerique_vert"
+                android:text="Valider"/>
+        </LinearLayout>
+    </LinearLayout>
+<LinearLayout
+    android:id="@+id/linear_layout_reponse_fausse"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+    <TextView
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:id="@+id/txt_incorrect"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:textSize="17dp"
+        android:text="@string/incorrect"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_marginTop="6dp"
+        android:id="@+id/tips"
+        android:gravity="center"
+        android:background="@drawable/pop_up_niveau"
+        android:text="Besoin d'un tips ?"
+        android:textSize="17dp"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:textColor="@color/colorPrimary"/>
+</LinearLayout>
+</LinearLayout>

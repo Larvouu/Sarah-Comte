@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Statistiques"
+    android:background="@color/colorPrimaryUltraLight"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@drawable/pop_up_niveau"
+        android:layout_width="360dp"
+        android:layout_height="500dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Statistiques"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25dp"/>
+        <View
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            style="@style/ligne_menuPrincipal"
+            android:background="@color/colorPrimaryLight"/>
+
+
+
+        <!-- LE LINEAR LAYOUT DE L ONGLET -->
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_marginLeft="0dp"
+                android:id="@+id/btn_stat_add"
+                style="@style/stat_btn_mode_de_jeu"
+                android:text="@string/add" />
+            <Button
+                style="@style/stat_btn_mode_de_jeu"
+                android:id="@+id/btn_stat_sous"
+                android:text="@string/sous"/>
+            <Button
+                android:id="@+id/btn_stat_mult"
+                android:text="Multiplication"
+                style="@style/stat_btn_mode_de_jeu"/>
+            <Button
+                android:id="@+id/btn_stat_div"
+                style="@style/stat_btn_mode_de_jeu"
+                android:text="@string/div"/>
+            <Button
+                style="@style/stat_btn_mode_de_jeu"
+                android:id="@+id/btn_stat_tous_mode"
+                android:text="Tous"/>
+        </LinearLayout>
+
+
+
+        <!-- LE LINEAR LAYOUT DIFFICULTE -->
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_marginLeft="0dp"
+                android:id="@+id/btn_stat_debutant"
+                style="@style/stat_btn_mode_de_jeu"
+                android:background="@drawable/btn_sous_sous_background"
+                android:text="@string/debutant" />
+            <Button
+                style="@style/stat_btn_mode_de_jeu"
+                android:id="@+id/btn_stat_intermediaire"
+                android:text="@string/intermediaire"
+                android:background="@drawable/btn_sous_sous_background"/>
+            <Button
+                android:id="@+id/btn_stat_pro"
+                android:text="@string/pro"
+                style="@style/stat_btn_mode_de_jeu"
+                android:background="@drawable/btn_sous_sous_background"/>
+            <Button
+                android:id="@+id/btn_stat_expert"
+                style="@style/stat_btn_mode_de_jeu"
+                android:text="@string/expert"
+                android:background="@drawable/btn_sous_sous_background"/>
+            <Button
+                style="@style/stat_btn_mode_de_jeu"
+                android:id="@+id/btn_stat_tous_diff"
+                android:text="Tous"
+                android:background="@drawable/btn_sous_sous_background"/>
+        </LinearLayout>
+        <View
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            style="@style/ligne_menuPrincipal"
+            android:background="@color/colorPrimaryLight"/>
+
+
+
+        <!-- LE LINEAR LAYOUT ADDITION DEBUTANT-->
+        <LinearLayout
+            android:id="@+id/linear_layout_stat_add_deb"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="330dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:text="Parties"/>
+            <View
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                style="@style/ligne_menuPrincipal"
+                android:background="@android:color/white"/>
+            <TextView
+                android:id="@+id/txt_add_deb_parties"
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:text="0"/>
+            <TextView
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:text="Calculs essayés"/>
+            <View
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                style="@style/ligne_menuPrincipal"
+                android:background="@android:color/white"/>
+            <TextView
+                android:id="@+id/txt_add_deb_calculs"
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:text="0"/>
+            <TextView
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:text="Bonnes réponses"/>
+            <View
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                style="@style/ligne_menuPrincipal"
+                android:background="@android:color/white"/>
+            <TextView
+                android:id="@+id/txt_add_deb_rep_bonnes"
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:text="0"/>
+            <TextView
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:text="Mauvaises réponses"/>
+            <View
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                style="@style/ligne_menuPrincipal"
+                android:background="@android:color/white"/>
+            <TextView
+                android:id="@+id/txt_add_deb_rep_fausses"
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:text="0"/>
+            <TextView
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:text="Taux de bonnes réponses"/>
+            <View
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                style="@style/ligne_menuPrincipal"
+                android:background="@android:color/white"/>
+            <TextView
+                android:id="@+id/txt_add_deb_taux"
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:text="0"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_stat_retour_menu"
+        android:layout_marginTop="10dp"
+        style="@style/btn_pop_up"
+        android:layout_width="220dp"
+        android:text="@string/retourMenu"/>
+
+
+
+</LinearLayout>

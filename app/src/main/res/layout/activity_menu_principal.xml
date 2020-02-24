@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MenuPrincipal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient1">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linear_layout_menu_principal"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <!-- LE BOUTON JOUER SUIVI DE TOUS LES SOUS BOUTONS ET LES SOUS-SOUS BOUTONS-->
+
+    <Button
+        android:id="@+id/jouer_btn"
+        style="@style/btn_menuPrincipal"
+        android:drawableLeft="@drawable/ic_play_arrow_black_24dp"
+        android:text="Jouer" />
+
+
+<LinearLayout
+    android:id="@+id/linear_layout_sous_btn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:visibility="gone">
+    <Button
+        android:id="@+id/addition_btn"
+        style="@style/btn_sous_menuPrincipal"
+        android:text="@string/add"/>
+    <Button
+        android:id="@+id/soustraction_btn"
+        style="@style/btn_sous_menuPrincipal"
+        android:text="@string/sous"/>
+    <Button
+        android:id="@+id/multiplication_btn"
+        style="@style/btn_sous_menuPrincipal"
+        android:text="@string/mult"/>
+    <Button
+        android:id="@+id/division_btn"
+        style="@style/btn_sous_menuPrincipal"
+        android:text="@string/div"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_sous_sous_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+        <Button
+            android:id="@+id/deb_btn"
+            style="@style/btn_sous_sous_menuPrincipal"
+            android:text="@string/debutant"/>
+        <Button
+            android:id="@+id/int_btn"
+            style="@style/btn_sous_sous_menuPrincipal"
+            android:text="@string/intermediaire"/>
+        <Button
+            android:id="@+id/pro_btn"
+            style="@style/btn_sous_sous_menuPrincipal"
+            android:text="@string/pro"/>
+        <Button
+            android:id="@+id/exp_btn"
+            style="@style/btn_sous_sous_menuPrincipal"
+            android:text="@string/expert"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/statistiques_btn"
+        style="@style/btn_menuPrincipal"
+        android:drawableLeft="@drawable/ic_timeline_black_24dp"
+        android:text="Statistiques" />
+
+    <!-- OPTIONS -->
+    <Button
+        android:id="@+id/settings_btn"
+        style="@style/btn_menuPrincipal"
+        android:drawableLeft="@drawable/ic_settings_black_24dp"
+        android:text="Options" />
+    <LinearLayout
+        android:id="@+id/linear_layout_sous_btn_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+        <Button
+            android:id="@+id/theme_btn"
+            style="@style/btn_sous_menuPrincipal"
+            android:text="Changer le thème"/>
+
+        <Button
+            android:id="@+id/envoyer_commentaire_btn"
+            style="@style/btn_sous_menuPrincipal"
+            android:text="Noter l'application"/>
+        <Button
+            android:id="@+id/notif_btn"
+            style="@style/btn_sous_menuPrincipal"
+            android:text="Notifications"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/quitter_btn"
+        style="@style/btn_menuPrincipal"
+        android:drawableLeft="@drawable/ic_close_black_24dp"
+        android:text="Quitter"
+        android:layout_marginBottom="30dp"/>
+
+</LinearLayout>
+
+</ScrollView>

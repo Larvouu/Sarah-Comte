@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/gradient1">
+
+    <LinearLayout
+        android:layout_width="258dp"
+        android:layout_height="308dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="#13ff000d">
+
+        <!-- LE LINEAR LAYOUT DU TEXTE -->
+        <LinearLayout
+            android:background="@drawable/gradient1"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginBottom="5px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/res"
+                android:textSize="26sp"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <!-- LE LINEAR LAYOUT PRINCIPAL -->
+        <LinearLayout
+
+            android:layout_width="250dp"
+            android:layout_height="160dp"
+            android:orientation="vertical"
+            android:background="@drawable/gradient1"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="5px">
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="16dp">
+                <ProgressBar
+                    android:layout_width="match_parent"
+                    style="?android:progressBarStyleHorizontal"
+                    android:progressDrawable="@drawable/progress_bar_under"
+                    android:progress="100"
+                    android:layout_height="match_parent"
+                    />
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="?android:progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progress="80"
+                android:progressDrawable="@drawable/progress_bar" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/txt_pop_up_resultat"
+                android:textSize="20dp"
+
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_pop_up_resultat"
+                android:textColor="@android:color/black"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/gradient1"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/replay_btn"
+                style="@style/btn_pop_up"
+                android:text="@string/replay"
+                android:layout_marginRight="10dp"
+                android:layout_width="110dp"
+                android:textColor="@android:color/black"/>
+            <Button
+                android:id="@+id/retourMenu_btn"
+                style="@style/btn_res"
+                android:text="@string/retourMenu"
+                android:layout_width="110dp"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

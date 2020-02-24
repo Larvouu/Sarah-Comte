@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Sarah Compte</string>
+    <string name="menu">Menu</string>
+    <string name="presentation"><b> Sarah Compte </b> est une application qui permet de <b> progresser en calcul mental </b>, sur tous les types d\'opérations. </string>
+
+    <string name="jouer">Commencez une partie <b> adaptée à votre niveau </b>, en choisissant votre mode de jeu</string>
+    <string name="statistiques"><b> Suivez vos progrès</b>  grâce au suivi de vos parties précédentes</string>
+    <string name="envoyer_commentaire"><b>Notez</b> l\'application et envoyer vos commentaires pour nous aider à améliorer votre expérience</string>
+    <string name="quitter"><b>Fermer</b> l\'application</string>
+
+    <string name="add">Additions</string>
+    <string name="sous">Soustractions</string>
+    <string name="mult">Multiplications</string>
+    <string name="div">Divisions</string>
+
+    <string name="debutant">Débutant</string>
+    <string name="intermediaire">Intermédiaire</string>
+    <string name="expert">Expert</string>
+    <string name="pro">Pro</string>
+
+    <string name="start">Commencer</string>
+
+    <string name="choix_diff">Choisissez le niveau de difficulté</string>
+
+    <string name="titre_mult">Multiplication</string>
+    <string name="titre_add">Addition</string>
+    <string name="titre_sous">Soustraction</string>
+    <string name="titre_div">Division</string>
+
+    <string name="diff_deb">Difficulté : Débutant</string>
+    <string name="diff_int">Difficulté : Intermédiaire</string>
+    <string name="diff_pro">Difficulté : Pro</string>
+    <string name="diff_exp">Difficulté : Expert</string>
+
+    <string name="res">Résultat</string>
+    <string name="incorrect">Incorrect !</string>
+
+    <string name="tips_int">Multipliez les dizaines entre elles, puis l\'unité du premier nombre par la dizaine du deuxieme, ajoutez-y la multiplication entre la dizaine du premier nombre et l\'unité du deuxième nombre, poursuivez par multiplier les unités entres elles, et additionnez le tout !</string>
+
+
+    <string name="err_aff">Erreur Affichage</string>
+
+    <string name="txt_pop_up_resultat">Score : </string>
+
+    <string name="replay">Rejouer</string>
+    <string name="retourMenu">Menu Principal</string>
+</resources>

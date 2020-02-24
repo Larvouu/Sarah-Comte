@@ -1,0 +1,130 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- LES BOUTONS DU MENU -->
+    <!-- LES BOUTONS PRINCIPAUX (La priorité se trouve dans la v23) -->
+
+    <style name="btn_menuPrincipal">
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_width">330dp</item>
+        <item name="android:layout_marginTop">48dp</item>
+        <item name="android:drawablePadding">16dp</item>
+        <item name="android:paddingLeft">32dp</item>
+        <item name="android:paddingRight">32dp</item>
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:drawableTint">@android:color/white</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">left|center_vertical </item>
+    </style>
+
+    <!-- LES BOUTONS QUI APPARAISSENT QUAND ON CLIQUE SUR LES BOUTONS PRINCIPAUX -->
+
+    <style name="btn_sous_menuPrincipal">
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_width">328dp</item>
+        <item name="android:layout_marginTop">1px</item>
+        <item name="android:paddingLeft">32dp</item>
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">left|center_vertical </item>
+
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <!-- LES SOUS SOUS BOUTONS -->
+
+    <style name="btn_sous_sous_menuPrincipal">
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_width">326dp</item>
+        <item name="android:layout_marginTop">1px</item>
+        <item name="android:paddingLeft">32dp</item>
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">left|center_vertical </item>
+
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <!-- LIGNE DE SEPARATION ENTRE CHAQUE OPTION -->
+
+    <style name="ligne_menuPrincipal">
+        <item name="android:layout_width">320dp</item>
+        <item name="android:layout_height">1px</item>
+
+        <item name="android:layout_gravity">center_horizontal</item>
+
+        <item name="android:background">@color/colorLigneMenu</item>
+    </style>
+
+    <!-- LES BOUTONS DANS LE POP UP -->
+    <style name="btn_pop_up">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@drawable/pop_up_niveau</item>
+
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <!-- LES BOUTONS DU PAVE NUMERIQUE -->
+    <style name="btn_pave_numerique">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">55dp</item>
+        <item name="android:background">@drawable/circle_button</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="btn_pave_numerique_vert">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">55dp</item>
+        <item name="android:background">@drawable/button_vert_background</item>
+
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="btn_pave_numerique_orange">
+    <item name="android:layout_height">50dp</item>
+    <item name="android:layout_width">55dp</item>
+    <item name="android:background">@drawable/button_orange_background</item>
+
+    <item name="android:textAllCaps">false</item>
+    <item name="android:textColor">@android:color/white</item>
+    <item name="android:textSize">13sp</item>
+</style>
+
+    <style name="stat_btn_mode_de_jeu">
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">65dp</item>
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <!-- LES BOUTONS DE LA PAGE RESULTAT, comme btn_pop_up mais avec un autre drawable -->
+    <style name="btn_res">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@drawable/button_background</item>
+
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+</resources>
